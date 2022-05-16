@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+
+
+:root{
+
+   --main-color: #fa9805;
+   --mygreen-light: rgb(39, 221, 121);
+   --mygreen: #0a3326;
+   --teal: #20c997;
+   --black-footer : #333;
+   /* --blue: #00b8b8; */
+   --white: #fff;
+   --border: .2rem solid rgba(0,0,0,.1);
+   --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.redressed{
+
+    font-family: 'Redressed', cursive;
+}
+
+.merriweather{
+
+    font-family: 'Merriweather', serif;
+}
+
+li, ul {
+
+  list-style: none;
+}
+
+*{
+
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none !important;
+  /* text-transform: capitalize; */
+}
+
+*::-webkit-scrollbar{
+
+  height: .5rem;
+  width: 1rem;
+}
+
+*::-webkit-scrollbar-track{
+
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+  
+  background-color: var(--teal);
+}
+
+body{
+
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+html{
+
+  font-size: 55.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6.5rem;
+}
+
+section{ 
+
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+}
+
+/***************************************************** les boutons************************************************** */
+.link-btn{
+
+  display: inline-block;
+  padding:1rem 1rem;
+  border-radius: .5rem;
+  background-color: var(--teal);
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--white);
+
+}
+
+.link-btn:hover{
+
+  background-color: var(--main-color);
+  color: var(--white);
+}
+
+
+.btn-savoir{
+
+  padding: 5px 5px;
+  color: var(--white);
+  border-color: var(--teal);
+  transition: 0.5s;
+}
+
+.btn-savoir:hover{
+  
+  color: var(--white);
+  background-color: var(--main-color);
+}
+
+
+
+/* ********************************************* BARRE DE NAVIGATION ************************************************* */
+
+.ma-navbar{
+  
+  background-color: var(--mygreen);
+  font-family : 'Merriweather', 'serif', 'sans-serif';
+  padding-top: 1.5rem;
+  text-transform: capitalize;
+
+}
+
+section.sticky {
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50;
+}
+
+nav.sticky {
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  
+
+}
+
+#accueilBtnTop {
+
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  color: var(--teal);
+  cursor: pointer;
+
+}
+
+#accueilBtnTop:hover {
+
+  color: var(--white);
+}
+
+
+/* ********************************************* MENU ************************************************* */
+
+.menu{
+
+  margin-left: 50px;
+}
+
+.menu > .menu-item{
+
+  display: inline-block;
+  margin-left: 30px;
+  position: relative;
+}
+
+.menu > .menu-item > a{
+
+  display: block;
+  /* padding: 1px 0; */
+  font-size: 15px;
+  color: var(--white);
+  text-transform: capitalize;
+  font-weight: 400;
+  text-transform: capitalize;
+
+}
+
+.menu > .menu-item > a:hover{
+
+  color: var(--main-color);
+ 
+}
+
+.menu-item > a{
+
+  display: block;
+  font-size: 17px;
+  color: var(--white);
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.menu-item > a:hover{
+
+  color: var(--main-color);
+}
+
+.menu-item > a> i{
+
+  color: green;
+}
+
+
+.menu .menu-item a.active{
+
+  color: var(--main-color);
+
+}
+
+
+/***************************************** contenu du body ****************************************/
+
+.banner{
+
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+              url("../../images/bg1.jpg") center center fixed no-repeat;
+  background-size: cover;
+  height : 420px;
+
+}
+
+
+.banner .banner-desc{
+
+    font-family: 'redressed';
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--white);
+    text-transform: capitalize;
+}
+
+
+mark{
+
+  background-color:rgba(255, 0, 0, 0.774);
+  color: var(--white);
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+    /*++++++++++++++++++++++++++++++++++ Pieds de pages +++++++++++++++++++++++*/
+  
+    .footer{
+
+      background: var(--black-footer);
+    }
+  
+  .footer .box{
+
+      flex: 1 1 250px;
+      text-align: justify !important;
+  }
+  
+  .footer .box h3{
+
+      font-size: 20px;
+      color: var(--white);
+      text-transform: capitalize;
+  }
+  
+  .footer .box a{
+
+      display: block;
+      font-size: 11px;
+      color: var(--mygreen-light);
+      padding: 5px 0;
+      text-transform: capitalize;
+  }
+  
+  .footer .box .fab{
+    
+    color: rgb(31, 101, 230);
+    text-transform: capitalize;
+  }
+  
+  .footer .box a:hover{
+  
+      color:var(--main-color);
+  }
+  
+  .footer .credit{
+  
+      text-align: center;
+      color: #eee;
+      border-top: 1px solid rgba(0,0,0,.1);
+      font-size: 11px;
+      margin-top: 10px;
+      padding-top: 20px;
+  }
+  
+  .footer .credit strong{
+  
+   text-transform: uppercase;
+  }
+  
+  .footer .credit #d{
+  
+    color: #fa9805;  
+   }
+  
+   .footer .credit #gb{
+  
+    color: #eee;  
+   }
+  
+   .footer .credit #f{
+  
+    color: rgba(37, 167, 11, 0.877);  
+   }
+  
+  .footer .credit span{
+  
+      color:var(--main-color);
+      text-transform: capitalize;
+  }
+  

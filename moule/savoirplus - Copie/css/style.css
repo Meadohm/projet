@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:ital,wght@0,300;0,700;1,400 & display=swap');
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+
+    padding: 100px;
+}
+
+section h2{
+
+    font-size: 2rem;
+    /* text-align: center; */
+    color: #4b656d;
+    text-transform: uppercase;
+}
+
+section h2 span {
+
+    display: block;
+    font-size: 0.5em;
+    /* text-align: left; */
+    color: #ff4983;
+}
+
+
+section p {
+
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.prechargeur{
+
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: #070707;
+    z-index: 100000000;
+}
+
+.prechargeur:before{
+
+    content: 'Chargement...';
+    position: absolute;
+    font-size: 5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .03);
+}
+
+
+
+.prechargeur.active{
+
+    transform: translateY(-100vh);
+    transition: ease-in-out 2s;
+    transition-delay: 1s;
+}
+
+
+.compteur{
+
+    position: relative;
+    color: #fff;
+    font-size: 5em;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.compteur:after{
+
+    content: '%';
+    font-size: 0.4em;
+}
+
+.hide{
+
+    opacity: 0;
+    transform: 1s;
+    pointer-events: none; 
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"/> -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>En savoir+</title>
+</head>
+<body>
+    <div class="prechargeur"> 
+        <div class="compteur">0</div>
+    </div>
+    <section>
+        <h2>Plateforme de prise de Rdv au sein de la DGBF !!<br/><br/>
+            <span>Ce que vous devriez savoir...</span>
+        </h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore consectetur saepe 
+            reprehenderit aliquam hic quia dolore nulla animi, quos eveniet! Amet culpa voluptate 
+            natus, corporis, nostrum aut cumque illo exercitationem mollitia eligendi perferendis 
+            beatae dolor sit molestiae earum inventore. Ratione molestias doloremque quod.<br/><br/>
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta odio ea eligendi. Alias 
+            debitis id autem, quisquam itaque ad voluptates pariatur doloremque iure ullam delectus 
+            dolores, hic placeat aliquid nulla, voluptatibus possimus natus nesciunt deleniti.<br/>
+        
+            totam eius esse debitis consequatur nostrum quis sapiente assumenda saepe! Voluptatum tempora 
+            maxime ipsum delectus non dicta omnis eum doloribus, culpa quidem rerum ex expedita laboriosam 
+            ea exercitationem commodi molestias. Nobis vero iste quaerat ipsa quos exercitationem recusandae 
+            illo vel deleniti. Laborum libero pariatur debitis facilis ducimus, officiimagni odit.<br/><br/>
+
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus consequuntur magni sint 
+            magnam facilis aperiam doloremque repudiandae totam obcaecati ut dolore corrupti non asperiores
+            cum consectetur in corporis, eaque fuga porro dolorum fugiat. Nobis iste nostrum doloribus eos
+            magnam dolorem dolorum voluptatum quo ratione iure officiis quibusdam, nesciunt similique sapiente
+            perferendis error. Distinctio quasi aperiam, dolore iste cum nesciunt sed rem velit totam illum eius
+        </p>
+
+    </section>
+
+
+    <script type="text/javascript">
+
+        function moncompteur(){
+
+            var compt = setInterval(function(){
+
+                var c = parseInt($('.compteur').text());
+                $('.compteur').text((++c).toString());
+
+                if(c == 100){
+
+                    clearInterval(compt);
+
+                    $('.compteur').addClass('hide');
+                    $('.prechargeur').addClass('active');
+                }
+            },60)
+        }
+
+        moncompteur();
+        
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- je peux utiliser ce lien aussi mais c'est une ancienne version -->
+<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+
+
+                          <!-- lien de cdn jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+</body>
+</html>

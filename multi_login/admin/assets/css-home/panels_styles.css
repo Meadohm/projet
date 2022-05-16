@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+
+
+:root{
+
+  --main-color: #fa9805;
+  --mygreen-light: rgb(39, 221, 121);
+  --mygreen: #0a3326;
+  --teal: #20c997;
+  --black-footer : #333;
+  /* --blue: #00b8b8; */
+  --white: #fff;
+  --light-bg:#eee;
+  --border: .2rem solid rgba(0,0,0,.1);
+  --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+
+
+li, ul {
+
+ list-style: none;
+}
+
+*{
+
+ font-family: 'Poppins', sans-serif;
+ margin:0; padding:0;
+ box-sizing: border-box;
+ outline: none; border:none;
+ text-decoration: none !important;
+ /* text-transform: capitalize; */
+}
+
+*::-webkit-scrollbar{
+
+ height: .5rem;
+ width: 1rem;
+}
+
+*::-webkit-scrollbar-track{
+
+ background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+ 
+ background-color: var(--teal);
+}
+
+body{
+
+ overflow-x: hidden;
+ overflow-y: scroll;
+}
+
+html{
+
+ font-size: 55.5%;
+ scroll-behavior: smooth;
+ scroll-padding-top: 6.5rem;
+}
+
+/* section{ 
+
+  padding: 2rem 3em;
+  
+} */
+
+.panel_left,
+.panel_right{
+
+  margin-top: 20px;
+}
+
+
+.label_titre1{
+
+  color: #00353F;
+  background-color: rgb(116, 238, 116);
+  padding: 8px 10px;
+  padding-right: 70px;
+  font-size: 14px;
+  width: 100%;
+  text-align: left;
+  font-weight: 500;
+  
+}
+
+
+.notification {
+
+  padding: 3px 5px;
+  position: relative;
+  display: inline-block;
+  
+}
+
+.notification:hover {
+  background: red;
+}
+
+.notification .badge {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 5px 7px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}

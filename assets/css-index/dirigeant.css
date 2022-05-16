@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+
+
+
+:root{
+
+  --main-color: #fa9805;
+  --mygreen-light: rgb(39, 221, 121);
+  --mygreen: #0a3326;
+  --teal: #20c997;
+  --black-footer : #333;
+  /* --blue: #00b8b8; */
+  --white: #fff;
+  --border: .2rem solid rgba(0,0,0,.1);
+  --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+
+.merriweather{
+
+   font-family: 'Merriweather', serif;
+}
+
+li, ul {
+
+ list-style: none;
+}
+
+*{
+
+ font-family: 'Poppins', sans-serif;
+ margin:0; padding:0;
+ box-sizing: border-box;
+ outline: none; border:none;
+ text-decoration: none !important;
+ text-transform: capitalize;
+}
+
+*::-webkit-scrollbar{
+
+ height: .5rem;
+ width: 1rem;
+}
+
+*::-webkit-scrollbar-track{
+
+ background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+ 
+ background-color: var(--teal);
+}
+
+body{
+
+ overflow-x: hidden;
+ overflow-y: scroll;
+}
+
+html{
+
+ font-size: 55.5%;
+ scroll-behavior: smooth;
+ scroll-padding-top: 6.5rem;
+}
+
+section{ 
+
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+}
+
+
+/* ********************************************* BARRE DE NAVIGATION ************************************************* */
+
+.ma-navbar{
+  
+  background-color: var(--mygreen);
+  font-family : 'Merriweather', 'serif', 'sans-serif';
+  padding-top: 1.5rem;
+
+}
+
+#dirigeantBtnTop {
+
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  color: var(--teal);
+  cursor: pointer;
+
+}
+
+#dirigeantBtnTop:hover {
+
+  color: var(--white);
+}
+
+/* ********************************************* MENU ************************************************* */
+
+.menu{
+
+  margin-left: 100px;
+}
+
+.menu > .menu-item{
+
+  display: inline-block;
+  margin-left: 30px;
+  position: relative;
+}
+
+.menu > .menu-item > a{
+
+  display: block;
+  /* padding: 1px 0; */
+  font-size: 15px;
+  color: var(--white);
+  text-transform: capitalize;
+  font-weight: 400;
+ 
+
+}
+
+.menu > .menu-item > a:hover{
+
+  color: var(--main-color);
+ 
+}
+
+.menu-item > a{
+
+  display: block;
+  font-size: 17px;
+  color: var(--white);
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.menu-item > a:hover{
+
+  color: var(--main-color);
+}
+
+.menu-item > a> i{
+
+  color: green;
+}
+
+
+.menu .menu-item a.active{
+
+  color: var(--main-color);
+
+}
+
+
+/***************************************** contenu du body ****************************************/
+
+
+.heading{
+
+  text-align: center;
+  padding: 2.5rem 0;
+  /* margin-top: 100px; */
+}
+
+
+.heading span{
+
+  font-size: 2rem;
+  background: rgba(255, 165, 0,.2);
+  color: var(--main-color);
+  border-radius: .3rem;
+  padding: .2rem 1rem;
+}
+
+.heading span.space{
+  background:none;
+}
+
+.dirigeants .dirigeants-slider{
+
+  padding-bottom: 1rem;
+}
+
+.dirigeants .box{
+
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+  border-radius: .5rem;
+  
+}
+
+.dirigeants .box img{
+  height: 9rem;
+  width: 9rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.dirigeants .box h3{
+
+  color:#333;
+  font-size: 1.5rem;
+}
+
+.dirigeants .box p{
+  color:#666;
+  font-size: 1rem;
+  padding:1rem 0;
+}
+
+.dirigeants .box .stars i{
+  color: var(--main-color);
+  font-size: 1rem;
+}
+
+
+.swiper-wrapper {
+  
+  position: relative;
+  width: 100%;
+  height: 35%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+
+
+
+
+
+
+    /*++++++++++++++++++++++++++++++++++ Pieds de pages +++++++++++++++++++++++*/
+  
+    .footer{
+
+      background: var(--black-footer);
+    }
+  
+  .footer .box{
+      flex: 1 1 250px;
+      text-align: justify !important;
+  }
+  
+  .footer .box h3{
+      font-size: 20px;
+      color: var(--white);
+  }
+  
+  .footer .box a{
+      display: block;
+      font-size: 11px;
+      color: var(--mygreen-light);
+      padding: 5px 0;
+  }
+  
+  .footer .box .fab{
+    
+    color: rgb(31, 101, 230);
+  }
+  
+  .footer .box a:hover{
+  
+      color:var(--main-color);
+  }
+  
+  .footer .credit{
+  
+      text-align: center;
+      color: #eee;
+      border-top: 1px solid rgba(0,0,0,.1);
+      font-size: 11px;
+      margin-top: 10px;
+      padding-top: 20px;
+  }
+  
+  .footer .credit strong{
+  
+   text-transform: uppercase;
+  }
+  
+  .footer .credit #d{
+  
+    color: #fa9805;  
+   }
+  
+   .footer .credit #gb{
+  
+    color: #eee;  
+   }
+  
+   .footer .credit #f{
+  
+    color: rgba(37, 167, 11, 0.877);  
+   }
+  
+  .footer .credit span{
+  
+      color:var(--main-color);
+      text-transform: capitalize;
+  }
+  
